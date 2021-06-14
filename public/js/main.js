@@ -55,6 +55,30 @@ mabarre.addEventListener("keyup", (e) => {
                           }
             })
          });
+
+         toDo.addEventListener("click", () => {
+            if (mabox.checked == false){
+                thingsToDo.style.display = "flex";
+                console.log("hello");
+              } else {
+                thingsToDo.style.display = "none";
+                console.log("hello");
+              }
+         });
+    
+         done.addEventListener("click", () => {
+            if (mabox.checked == true){
+                thingsToDo.style.display = "flex";
+              } else {
+                thingsToDo.style.display = "none";
+              }
+         });
+    
+         monall.addEventListener("click", () => {
+            if (mabox.checked == true || mabox.checked == false){
+                thingsToDo.style.display = "flex";
+            }
+         });
     
         
     }
